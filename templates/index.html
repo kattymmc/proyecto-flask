@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Document</title> 
+</head>
+<body>
+    <div id="container">
+        <div class="fila">
+            <div class="register-img">
+                <!--img src="../static/Libros.png"-->
+            </div>
+            <div id="formulario" class="form-register">
+                {% for mensaje in get_flashed_messages() %}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    {{ mensaje }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+                <img src="../static/img_SeixBarral.png" class="img-SixBarrel">
+                <h4>Registrate y entérate de las últimas novedades en libros</h4>
+                <div class="botones">
+                    <button type="button" class="btn boton-red-social"><i class="fab fa-google"></i>Regístrate con Google</button>
+                    <button type="button" class="btn boton-red-social"><i class="fab fa-facebook"></i> Regístrate con Facebook</button>
+                </div>
+                <h4>-O-</h4>
+                {% block contenido %}
+    
+                {% endblock %}
+                <p>¿Tienes una cuenta? <a href="#">Iniciar sesión</a></p>
+                <br>
+            </div>
+        </div> 
+    </div>
+    <script src="../static/code_visual.js"></script>
+</body>
+</html>

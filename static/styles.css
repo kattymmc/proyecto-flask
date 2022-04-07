@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.register-img {
+    width: 45%;
+    background-image: url("Libros.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 6;
+}
+
+#formulario {
+    width: 55%;
+    flex-grow: 4;
+}
+
+@media (max-width: 920px){
+    /*Se ejecutaran estos estilos*/
+    #formulario{
+        width: 100%;
+    }
+    .register-img {
+        width: 0%;
+    }
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+.fila{
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    background-color: #FCF9F9;
+    font-family: 'Telex', sans-serif;
+    justify-content: center;
+}
+
+.container-ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 60%;
+    right: 17%;
+    transform: translateY(-50%);
+    width: 30px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+  
+.icon:hover {
+    opacity: 0.8;
+}
+
+.img-SixBarrel {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-register h4 {
+    margin: 20px auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #5C5C5C;
+}
+
+.form-register .controls {
+    background: #FCF9F9;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    margin-top: 5%;
+    font-size: 19px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #C4C4C4;
+    border-bottom-width: 1px;
+    display: block;
+    width: 70%;
+}
+
+.form-register .botons {
+    display: block;
+    margin: 0 auto;
+    background: #9B3F00;
+    border-radius: 8px;
+    padding: 12px 90px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: #9B3F00;
+    text-decoration: none;
+}
+  
+.form-register a:hover {
+    color: #9B3F00;
+    text-decoration: underline;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-red-social {
+    border-radius: 8px;
+    padding: 12px;
+    background: #FFFFFF;
+    border: 1px solid #D8D3D3;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #5C5C5C;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+  
+
+aside{
+    height: 100%;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-right: 15px;
+}
+
+.fa-facebook {
+    color: #3b5998;
+    margin-right: 15px;
+}

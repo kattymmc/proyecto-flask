@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block contenido %}
+<form method="POST">
+    {{ formulario.hidden_tag()}}
+    {{ formulario.nombre(class_='controls',placeholder='Nombre Completo') }}
+    {{ formulario.correo(class_='controls',placeholder='Correo electrónico') }}
+    <!--input class="controls" type="text" name="nombre" id="nombres" placeholder="Nombre Completo">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electrónico"-->
+    <div class="container-ico ">
+        {{ formulario.contrasena(class_='controls',placeholder='Contraseña') }}
+        <!--input id="Input" class="controls" type="password" placeholder="Contraseña"-->
+        <img id="Eye" src="../static/icono_visual_close.ico" alt="" class="icon">
+    </div>
+    {{ formulario.boton(class_='botons') }}
+    <!--input class="botons" type="submit" value="Registrar"-->
+</form>
+{% endblock %}
